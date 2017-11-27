@@ -327,7 +327,7 @@ footer {
 }
 
 .cd-fixed-bg {
-  background-size: 75% 100%;
+  background-size: 75%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
