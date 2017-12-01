@@ -58,3 +58,9 @@
             $(this).animate({'opacity':'1'},2000);
         });
   });
+
+window.onload=Show();
+function Show(){
+    document.getElementById('page-top').style.display='block';
+    document.getElementById('loader').style.display='none';
+}
