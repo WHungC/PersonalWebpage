@@ -60,6 +60,4 @@
   });
 
 window.onload = Show() {
-    document.getElementById('page-top').style.display='block';
-    document.getElementById('loader').style.display='none';
 }
