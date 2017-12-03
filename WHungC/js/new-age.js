@@ -59,5 +59,3 @@
         });
   });
 
-window.onload = Show() {
-}
