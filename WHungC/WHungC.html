@@ -2,11 +2,12 @@
 <html lang="en">
 
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    
+
     <title>WHungC</title>
 
     <!-- Bootstrap core CSS -->
@@ -19,10 +20,16 @@
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+
     <!-- Custom styles for this template -->
     <link href="css/new-age.css" rel="stylesheet">
 
   </head>
+  <div id="loader" class="loader">Loading...</div>
+  <body id="page-top">
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -111,6 +118,10 @@
                   <td>就業狀態</td>
                   <td>待業中</td>
                 </tr>
+                <tr class="animate-box">
+                  <td>住址</td>
+                  <td>新北市八里區</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -128,25 +139,7 @@
           <div class="col-lg-12 my-auto">
             <div class="container-fluid">
               <div class="row justify-content-around">
-                <div class="col-lg-4">
-                  <a class="nav-link story-href" href="" data-toggle="modal" data-target="#juniorhigh">
-                    <div class="feature-item">
-                      <i class="icon-book-open text-primary"></i>
-                      <h3>國 中</h3>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-4">
-                  <a class="nav-link story-href" href="" data-toggle="modal" data-target="#seniorhigh">
-                    <div class="feature-item">
-                      <i class="icon-notebook text-primary"></i>
-                      <h3>高 中</h3>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="row justify-content-around">
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                   <a class="nav-link story-href" href="" data-toggle="modal" data-target="#college">
                     <div class="feature-item">
                       <i class="icon-graduation text-primary"></i>
@@ -154,7 +147,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                   <a class="nav-link story-href" href="" data-toggle="modal" data-target="#military">
                     <div class="feature-item">
                       <i class="icon-shield text-primary"></i>
@@ -162,9 +155,7 @@
                     </div>
                   </a>
                 </div>
-              </div>
-              <div class="row justify-content-around">
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                   <a class="nav-link story-href" href="" data-toggle="modal" data-target="#job">
                     <div class="feature-item">
                       <i class="icon-briefcase text-primary"></i>
@@ -173,48 +164,6 @@
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div id="juniorhigh" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              <!-- Modal content-->
-
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title">國中</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                  <p>國中就讀於台北市明德國中，這個時期的我很愛玩，只有在國三時才為了考高中開始認真念書。也因為念書停了小提琴的課，從此便很少再碰這項樂器。</p>
-                  <p>念國中期間最不一樣的事蹟，大概就是當時很屁孩的我在歷史書上看到了"贖罪卷"三個字，開始製作贖罪卷並販售。本來就沒打算賣出去，沒想到竟然還真的有人花十塊買了，也因此被冠上了"教宗"這個綽號。現在想起來我似乎還有當"seafood"的潛力。</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div id="seniorhigh" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              <!-- Modal content-->
-
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title">高中</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                  <p>高中時期讀北市陽明高中，除了各種課業疲勞轟炸外，參加過戲劇社與辯論社。本來最後想轉到流行音樂社，不過被辯論社掛名職務而不得轉社。</p>
-                  <p>最後一年擔任班上畢代並加入畢聯會，協助畢典及畢冊的規畫。</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-              
             </div>
           </div>
 
@@ -228,8 +177,8 @@
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                  <p>到了大學，考上了金門大學資訊工程系，沒想過會來的土地，因為指考分發來到這裡。</p>
-                  <p>在課業上，沒有遇到太大的困難。社團本來進了吉他社，後來到了大二開始參加合唱團。</p>
+                  <p>到了大學，考上了金門大學資訊工程系。</p>
+                  <p>在課業上，沒有遇到太大的困難。社團參加合唱團。</p>
                   <p>在這四年內，除學會了許多基本程式語言外，也學了許多軟體應用如PhotoShop等。而專題則是做建立在Adroid上的室內定位，利用藍芽模組定點發出信號強度讓手機計算位置。本專題共 5人合作，而我負責Android介面及部分後台。</p>
                 </div>
                 <div class="modal-footer">
@@ -271,10 +220,10 @@
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                  <p>做過的工作類型多樣，如工廠包裝工讀生、電腦普查工讀生、金門酒廠運動會場地佈置工讀生、網頁前端工讀生以及軟體工程師。</p>
-                  <p>電腦普查地點是三軍總醫院，整間醫院除了手術室幾乎都逛過了，看著各種病人讓我了解到健康非常重要，我不會想最後餘生是躺在病床上被看護推來推去度過。</p>
+                  <p>做過的工作類型多樣，如工廠包裝工讀生、電腦普查工讀生、金門酒廠運動會場地佈置工讀生、網頁前端工讀生。</p>
+                  <p>電腦普查地點是三軍總醫院，整間醫院除了手術室幾乎都逛過了。</p>
                   <p>金酒運動會的場佈我被分配到漆彈場，偶而臨時幫忙別的部分，3天內工作共計超過40小時，大概是最累的三天吧。</p>
-                  <p>網頁前端的工作是在大三暑假時，因為這項工作的關係令我對網頁如html, javascript更加熟悉，也讓我對設計網頁更加有興趣。</p>
+                  <p>網頁前端的工作是在大三暑假時，以Bootstrap撰寫網頁，因為這項工作的關係令我對網頁如html, javascript更加熟悉，也讓我對設計網頁更加有興趣。</p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -317,6 +266,7 @@
             <div class="modal-body">
               <img src="img/past_future.jpg" width="100%">
               <img src="img/magic.jpg" width="100%">
+              <img src="img/why.jpg" width="100%">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -353,7 +303,7 @@
             </div>
             <div class="modal-body">
               <p>此影片為當事人的自我介紹，含有多項個人資訊，故僅留頭尾並做畫面模糊以保護個資</p>
-              <video width="100%" controls controlsList="nofullscreen nodownload noremoteplayback" preload="none">
+              <video width="100%" controls>
                 <source src="video/videowork.mp4" type="video/mp4">
                 您的瀏覽器不支援MPEG4
               </video>
